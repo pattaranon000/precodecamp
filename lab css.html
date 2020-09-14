@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .showtooltip {
+          visibility: hidden;
+          width: 120px;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+        }
+        
+        .tooltip:hover .showtooltip {
+          visibility: visible;
+        }
+        </style>
+</head>
+<body>
+
+    <h3 align='center'>Tooltip</h3>
+    <div class="tooltip">this is tooltip
+        <span class="showtooltip">show tooltip</span>
+    </div>
+    <p>Tooltip คือ คือข้อความหรือกลุ่มของข้อมูลสั้น ๆ ที่ใช้อธิบายคำหรือจุดที่ต้องการอธิบายเพิ่มเติมบนหน้าเว็บ เช่น บนหน้าเว็บของคุณอาจจะมีข้อความเป็นศัพท์ทางเทคนิคอยู่ ถ้าคนทั่วไปอ่านแล้วอาจจะไม่เข้าใจในคำนั้น แต่เมื่อผู้อ่านเว็บนำเมาท์ไปชี้ที่คำนั้น มีข้อความ/รูปภาพปรากฏเพื่ออธิบายขยายความคำนั้นขึ้นมา</p>
+
+</body>
+</html>
